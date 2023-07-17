@@ -1,17 +1,16 @@
-import { attributes, skills } from "../data";
+import { attributes } from "../data";
 import Profile from "../assets/images/me.jpg";
-import Icon from "../components/Icon";
 import "./about.css";
 
 const About = () => {
   return (
     <div>
-      <section className="">
+      <section>
         <section className="grid justify-items-center mt-10 custom-color text-bold">
           <h1>About Me</h1>
         </section>
         <section className="flex justify-around items-center flex-col sm:flex-row px-5 sm:px-10">
-          <section className="">
+          <section>
             <img src={Profile} alt="portrait" className="mb-5 sm:mb-0 sm:mr-10"></img>
           </section>
           <section className="w-5/6">
@@ -27,17 +26,8 @@ const About = () => {
           </section>
         </section>
       </section>
-
       <section>
-        <h3 className="grid justify-items-center mt-10 custom-color text-bold">Skills</h3>
-        <section className="flex justify-around sa_section md:m-10 pt-5 ">
-          {skills.map((data) => {
-            return (
-              <Icon key={data.id} title={data.title} src={data.src}></Icon>
-            );
-          })}
-        </section>
-        <section className="margin">
+        <section className="sm:mt-48 sm:mb-24">
           <h3 className="grid justify-items-center mt-10 custom-color text-bold">Attributes</h3>
         </section>
         <section className="flex justify-around sa_section md:m-10">
