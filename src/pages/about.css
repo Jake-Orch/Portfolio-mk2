@@ -40,3 +40,7 @@ img {
     border:solid #1A1B41;
     border-radius: 500px;
 }
+
+.custom-color {
+    color:#1A1B41;
+}
