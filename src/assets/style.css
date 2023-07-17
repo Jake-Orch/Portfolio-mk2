@@ -14,11 +14,6 @@ body {
 .nav {
     background-color: #1A1B41;
     color: #F1FFE7;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    gap: 10px;
-    padding: 0 20px;
 }
 .footer {
     background-color: #1A1B41;
@@ -59,4 +54,12 @@ body {
 
 .custom-color {
     color:#1A1B41;
+}
+
+.form {
+    background-color: #6290C3;
+}
+
+.resume {
+    height: 746px;
 }
