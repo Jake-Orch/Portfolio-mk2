@@ -1,0 +1,42 @@
+h1, h2{
+    font-size: 30px;
+    margin: 10px;
+}
+
+h3 {
+    font-size: 20px;
+    margin: 10px;
+    justify-content: center;
+}
+
+/* .about {
+    display: flex;
+} */
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 150px;
+}
+
+
+.sa_section {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #d8d8d8;
+    margin: 5px;
+    border-radius: 5px; 
+}
+
+.sa {
+    color: #6290C3;
+    background-color: white;
+    font-size: 20px;
+    /* text-decoration: underline; */
+    padding: 10px;
+    margin: 20px;
+    border:solid #1A1B41;
+    border-radius: 500px;
+}
