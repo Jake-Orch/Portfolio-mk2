@@ -1,57 +1,57 @@
-import { attributes, skills } from '../data';
-import Profile from '../assets/images/me.jpg'
-import Icon from '../components/Icon';
-import './about.css'
+import { attributes, skills } from "../data";
+import Profile from "../assets/images/me.jpg";
+import Icon from "../components/Icon";
+import "./about.css";
 
 const About = () => {
-    return (
-        <div>
-            <section className='container-fluid d-flex flex-wrap pt-5'>
-                <section className='col-12 col-lg-2'>
-                    <h1>About Me</h1>
-                </section>
-                {/* <section className='col-12 col-md-2 col-lg-2 about_main_img'>
-                    <img src={Profile} alt='portrait'></img>
-                </section> */}
-                <section className='col-12 col-lg-10 d-flex flex-wrap'>
-                    <section className='container-fluid'>
-                        <section className=''>
-                            <img src={Profile} alt='portrait'></img>
-                        </section>
-                        <section className=''>
-                            <p>
-                                Hello, My name is Jake Orchard, a Full Stack Web Developer.
-                            </p>
-                            <p>
-                                I have been studying at the University of Birmingham through their Full Stack Web Developer bootcamp
-                            </p>
-                            <p>
-                                Throughout my time learning Web Development, I have created many front end, back end and full stack applications.
-                            </p>
-                        </section>
-                    </section>
-                </section>
+  return (
+    <div>
+      <section className="">
+        <section className="grid justify-items-center mt-10 custom-color text-bold">
+          <h1>About Me</h1>
+        </section>
+        <section className="flex justify-around items-center flex-col sm:flex-row px-5 sm:px-10">
+          <section className="">
+            <img src={Profile} alt="portrait" className="mb-5 sm:mb-0 sm:mr-10"></img>
+          </section>
+          <section className="w-5/6">
+            <p>Hello, My name is Jake Orchard, a Full Stack Web Developer.</p>
+            <p>
+              I have been studying at the University of Birmingham through their
+              Full Stack Web Developer bootcamp. Throughout my time learning Web Development, I have created many
+              front end, back end and full stack applications. I am enjoying the journey of learning web devlopment and looking forward to future endevours in the industry
+            </p>
+            <p>
+              
+            </p>
+          </section>
+        </section>
+      </section>
 
-            </section>
-
-            <section>
-                <h3>Skills</h3>
-                <section className='sa_section'>
-                    {skills.map((data) => {
-                        return <Icon key={data.id} title={data.title} src={data.src}></Icon>
-                    })}
-                </section>
-                <section className='margin'>
-                    <h3>Attributes</h3>
-                </section>
-                <section className='sa_section'>
-                    {attributes.map((data) => {
-                        return <p key={data.id} className='sa'>{data.title}</p>
-                    })}
-                </section>
-            </section>
-        </div>
-    )
-}
+      <section>
+        <h3 className="grid justify-items-center mt-10 custom-color text-bold">Skills</h3>
+        <section className="flex justify-around sa_section md:m-10 pt-5 ">
+          {skills.map((data) => {
+            return (
+              <Icon key={data.id} title={data.title} src={data.src}></Icon>
+            );
+          })}
+        </section>
+        <section className="margin">
+          <h3 className="grid justify-items-center mt-10 custom-color text-bold">Attributes</h3>
+        </section>
+        <section className="flex justify-around sa_section md:m-10">
+          {attributes.map((data) => {
+            return (
+              <p key={data.id} className="sa">
+                {data.title}
+              </p>
+            );
+          })}
+        </section>
+      </section>
+    </div>
+  );
+};
 
 export default About;

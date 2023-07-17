@@ -4,5 +4,6 @@ import SafeKeeping from './SafeKeeping.png';
 import WeatherDashboard from './WeatherDashboard.png';
 import WeatherIGo from './WeatherIGo.png';
 import WizDumb from './WizDumb.png'
+import Quiz from './quiz.png'
 
-export default  {NoteMakerPWA, PortfolioMk2, SafeKeeping, WeatherDashboard, WeatherIGo, WizDumb}
+export default  {NoteMakerPWA, Quiz, SafeKeeping, WeatherDashboard, WeatherIGo, WizDumb}
