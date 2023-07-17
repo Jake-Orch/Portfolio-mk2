@@ -5,15 +5,4 @@ import WeatherDashboard from './WeatherDashboard.png';
 import WeatherIGo from './WeatherIGo.png';
 import WizDumb from './WizDumb.png'
 
-const img = [NoteMakerPWA, PortfolioMk2, SafeKeeping, WeatherDashboard, WeatherIGo, WizDumb]
-
-const IMAGES = {
-    NoteMakerPWA: require('./NoteMakerPWA.png').default,
-    PortfolioMk2: require('./PortfolioMk2.png').default,
-    SafeKeeping: require('./SafeKeeping.png').default,
-    WeatherDashboard: require('./WeatherDashboard.png').default,
-    WeatherIGo: require('./WeatherIGo.png').default,
-    WizDumb: require('./WizDumb.png').default
-}
-
-export default img;
+export default  {NoteMakerPWA, PortfolioMk2, SafeKeeping, WeatherDashboard, WeatherIGo, WizDumb}

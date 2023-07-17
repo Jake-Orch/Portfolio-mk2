@@ -34,7 +34,7 @@ const Footer = () => {
         <div className="flex flex-col text-slate-300">
           <AiFillGithub
             id="github"
-            className="h-8 w-8 self-center fill-slate-300 hover:fill-slate-500"
+            className="h-8 w-8 self-center fill-slate-300 hover:fill-slate-500 hover:cursor-pointer"
             onClick={handleClick}
           />
           <span>Github</span>
@@ -42,7 +42,7 @@ const Footer = () => {
         <div className="flex flex-col text-slate-300">
           <AiFillLinkedin
             id="linkedin"
-            className="h-8 w-8 self-center fill-slate-300 hover:fill-slate-500"
+            className="h-8 w-8 self-center fill-slate-300 hover:fill-slate-500 hover:cursor-pointer"
             onClick={handleClick}
           />
           <span>LinkedIn</span>
@@ -50,7 +50,7 @@ const Footer = () => {
         <div className="flex flex-col text-slate-300">
           <BsStackOverflow
             id="stack"
-            className="h-8 w-8 self-center fill-slate-300 hover:fill-slate-500"
+            className="h-8 w-8 self-center fill-slate-300 hover:fill-slate-500 hover:cursor-pointer"
             onClick={handleClick}
           />
           <span>Stack Overflow</span>
