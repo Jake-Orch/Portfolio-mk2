@@ -16,8 +16,7 @@ const About = () => {
           <section className="w-5/6">
             <p>Hello, My name is Jake Orchard, a Full Stack Web Developer.</p>
             <p>
-              I have been studying at the University of Birmingham through their
-              Full Stack Web Developer bootcamp. Throughout my time learning Web Development, I have created many
+              I have been studying at the University of Birmingham through their Full Stack Web Developer bootcamp. Throughout my time learning Web Development, I have created many
               front end, back end and full stack applications. I am enjoying the journey of learning web devlopment and looking forward to future endevours in the industry
             </p>
             <p>
