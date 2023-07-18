@@ -1,0 +1,8 @@
+{
+  "short_name": "Jake's Portfolio",
+  "name": "Jake Orchard's Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#F1FFE7",
+  "background_color": "#1A1B41"
+}
