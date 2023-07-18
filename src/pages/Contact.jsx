@@ -31,6 +31,8 @@ const Contact = () => {
   const handleBlank = (e) => {
     if (e.target.value === "") {
       setEmptyError(`${e.target.name} Required`);
+    } else {
+      setEmptyError('')
     }
   };
 
