@@ -10,10 +10,10 @@ const Navbar = () => {
           Jake Orchard
         </a>
         <ul>
-          <CustomLink to="/">About</CustomLink>
-          <CustomLink to="/portfolio">Portfolio</CustomLink>
-          <CustomLink to="/contact">Contact</CustomLink>
-          <CustomLink to="/resume">Resume</CustomLink>
+          <CustomLink to="/Portfolio-mk2/">About</CustomLink>
+          <CustomLink to="/Portfolio-mk2/portfolio">Portfolio</CustomLink>
+          <CustomLink to="/Portfolio-mk2/contact">Contact</CustomLink>
+          <CustomLink to="/Portfolio-mk2/resume">Resume</CustomLink>
         </ul>
       </nav>
     </div>
