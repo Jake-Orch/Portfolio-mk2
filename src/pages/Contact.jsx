@@ -7,6 +7,8 @@ const Contact = () => {
   // This useState sets the value of the error if the email is invalid
   const [emailError, setEmailError] = useState("");
 
+  // This useState sets the value of emptyError, to be used if a field in the form is left empty
+  const [emptyError, setEmptyError] = useState("");
   // Here i am defining the email validation function to test the input against this email regex
 
   function validEmail(email) {
@@ -28,7 +30,7 @@ const Contact = () => {
   // This function tells the user that a field is required when they haven't entered any text and have moved away from the element
   const handleBlank = (e) => {
     if (e.target.value === "") {
-      alert(`${e.target.name} Required`);
+      setEmptyError(`${e.target.name} Required`);
     }
   };
 
@@ -76,9 +78,21 @@ const Contact = () => {
             name="_next"
             value="https://jake-orch.github.io/Portfolio-mk2/"
           ></input>
+          <input
+            type="hidden"
+            name="_next"
+            value="https://jake-orch.github.io/Portfolio-mk2/"
+          ></input>
+          {/* This is to display the error message if the email provided isnt formatted correctly */}
           {emailError && (
             <h2 className="" style={{ color: "red" }}>
               {emailError}
+            </h2>
+          )}
+          {/* This is to display the error message if an input area is left unfilled */}
+          {emptyError && (
+            <h2 className="" style={{ color: "grey" }}>
+              {emptyError}
             </h2>
           )}
           <button className="px-2 py-1 m-2 bg-slate-300 custom-color self-end border-2 border-black rounded-lg">
