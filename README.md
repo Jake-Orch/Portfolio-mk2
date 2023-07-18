@@ -1,7 +1,8 @@
 # Portfolio Mk2   
  
 ## Description  
-Welcom to my portfolio, this application consists of 4 pages, About, Projects, Contact and Readme, feel free to view the deployed applocation on the link below  
+Welcom to my portfolio, this application consists of 4 pages, About, Projects, Contact and Readme, feel free to view the deployed applocation on the link at the bottom of this file  
+![Image of about page](./assets/images/Portfolio.JPG) 
 ## Table of contents
 [Description](#description)  
 [Installation](#installation)  

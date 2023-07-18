@@ -2,18 +2,19 @@ import React from "react";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "../assets/style.css";
 
-const Navbar = () => {
+const Navigation = () => {
   return (
     <div className="grid">
-      <nav className="flex flex-col md:flex-row justify-between nav">
-        <a href="/" className="my-name">
+      <nav className="flex flex-col md:flex-row justify-between nav sm:px-10">
+        <a href="/" className="my-name self-center">
           Jake Orchard
         </a>
-        <ul>
-          <CustomLink to="/">About</CustomLink>
-          <CustomLink to="/portfolio">Portfolio</CustomLink>
-          <CustomLink to="/contact">Contact</CustomLink>
-          <CustomLink to="/resume">Resume</CustomLink>
+        {/* Here I have defined all of my page tabs, using the CustomLink function to add more style to them*/}
+        <ul className="flex flex-wrap justify-center">
+          <CustomLink to="/Portfolio-mk2/">About</CustomLink>
+          <CustomLink to="/Portfolio-mk2/portfolio">Portfolio</CustomLink>
+          <CustomLink to="/Portfolio-mk2/contact">Contact</CustomLink>
+          <CustomLink to="/Portfolio-mk2/resume">Resume</CustomLink>
         </ul>
       </nav>
     </div>
@@ -33,4 +34,4 @@ function CustomLink({ to, children, ...props }) {
   );
 }
 
-export default Navbar;
+export default Navigation;
