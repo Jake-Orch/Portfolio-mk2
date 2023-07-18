@@ -19,9 +19,9 @@ N/A
 ## Contributing  
 Message me via email (available below)
 ## Tests  
-I tested all functionality on the application  
+I tested all functionality on the application by going through the website and testing all functionality for errors.
 ## Questions  
 If you have any questions about this application, contact me via either my email address or my GitHub account.  
 My email address: jakeorchard@live.co.uk  
-My GitHub URL: https://github.com/Jake-Orch
+My GitHub URL: https://github.com/Jake-Orch  
 Deployed page URL: https://jake-orch.github.io/Portfolio-mk2/
