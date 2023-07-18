@@ -38,6 +38,7 @@ const About = () => {
           </h3>
         </section>
         <section className="flex justify-around sa_section md:m-10">
+          {/* This map is mapping through the attributes that I defined in data.jsx, and dispaying all the information needed from the data I have provided*/}
           {attributes.map((data) => {
             return (
               <p key={data.id} className="sa">

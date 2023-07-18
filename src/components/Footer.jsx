@@ -3,10 +3,11 @@ import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsStackOverflow } from "react-icons/bs";
 
 const Footer = () => {
-
   const handleClick = (e) => {
     e.preventDefault();
-        // This if statement is making sure that even if the click lands on the child element of the icons provided by react-icons, that the ID of the wanted element is retrieved,
+
+    // This if statement is making sure that even if the click lands on the child element of the icons provided by react-icons, that the ID of the wanted element is retrieved,
+
     // then, it directs the user to the correct website depending on the id of the element the user clicks
     if (e.target.getAttribute("id") === null) {
       const currentId = e.target.parentElement.getAttribute("id");
@@ -19,7 +20,8 @@ const Footer = () => {
         window.open("https://stackoverflow.com/users/21576331/jake-orchard");
       }
     } else {
-            // This else statement is for if the click lands on the element with the ID needed
+      // This else statement is for if the click lands on the element with the ID needed
+
       // then, it directs the user to the correct website depending on the id of the element the user clicks
       const currentId = e.target.getAttribute("id");
       console.log(e.target.getAttribute("id"));

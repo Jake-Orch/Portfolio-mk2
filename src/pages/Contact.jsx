@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   // This useState is used to get the value of the email section of the form
@@ -7,6 +8,7 @@ const Contact = () => {
   const [emailError, setEmailError] = useState("");
 
   // Here i am defining the email validation function to test the input against this email regex
+
   function validEmail(email) {
     return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
       email
@@ -37,6 +39,8 @@ const Contact = () => {
       </h1>
       <div>
         <form
+          action="https://formsubmit.co/jakeorchard@live.co.uk"
+          method="POST"
           id="contactform"
           className="flex flex-col p-20 m-5 custom-background border-2 border-black rounded-lg text-slate-300"
         >
@@ -62,7 +66,6 @@ const Contact = () => {
           ></input>
           <label htmlFor="message">Message</label>
           <textarea
-            type="text"
             className="h-60 p-1 text-black"
             id="message"
             name="Message"

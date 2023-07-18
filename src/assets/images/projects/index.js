@@ -5,6 +5,9 @@ import WeatherIGo from './WeatherIGo.png';
 import WizDumb from './WizDumb.png'
 import Quiz from './quiz.png'
 
+
 // Here I am importing all the images of the projects being displayed through the Project component in the Portfolio page
 
-export default { NoteMakerPWA, Quiz, SafeKeeping, WeatherDashboard, WeatherIGo, WizDumb }
+
+export default  {NoteMakerPWA, Quiz, SafeKeeping, WeatherDashboard, WeatherIGo, WizDumb}
+
