@@ -31,7 +31,7 @@ const Contact = () => {
         Contact Page
       </h1>
       <div>
-        <form id="contactform" className="flex flex-col p-20 m-5 custom-background border-2 border-black rounded-lg text-slate-300">
+        <form action="https://formsubmit.co/jakeorchard@live.co.uk" method="POST" id="contactform" className="flex flex-col p-20 m-5 custom-background border-2 border-black rounded-lg text-slate-300">
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -54,7 +54,6 @@ const Contact = () => {
           ></input>
           <label htmlFor="message">Message</label>
           <textarea
-            type="text"
             className="h-60 p-1 text-black"
             id="message"
             name="Message"
