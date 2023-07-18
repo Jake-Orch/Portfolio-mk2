@@ -66,6 +66,7 @@ const Contact = () => {
             name="Message"
             onBlur={handleBlank}
           ></textarea>
+          <input type="hidden" name="_next" value="https://jake-orch.github.io/Portfolio-mk2/"></input>
           {emailError && <h2 className="" style={{color: 'red'}}>{emailError}</h2>}
           <button className="px-2 py-1 m-2 bg-slate-300 custom-color self-end border-2 border-black rounded-lg">
             Submit
