@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import  { useNavigate } from 'react-router-dom'
 
 const Contact = () => {
 
@@ -29,6 +30,13 @@ const Contact = () => {
       alert(`${e.target.name} Required`);
     } 
   };
+
+  // This function redirects users to the about page once they send me an email
+
+  const navigate = useNavigate();
+  const handleSubmit = (e) => {
+    navigate('/Portfolio-mk2/')
+  }
 
   return (
     <div className="pb-3">
@@ -65,7 +73,7 @@ const Contact = () => {
             onBlur={handleBlank}
           ></textarea>
           {emailError && <h2 className="" style={{color: 'red'}}>{emailError}</h2>}
-          <button className="px-2 py-1 m-2 bg-slate-300 custom-color self-end border-2 border-black rounded-lg" >
+          <button className="px-2 py-1 m-2 bg-slate-300 custom-color self-end border-2 border-black rounded-lg" onClick={handleSubmit}>
             Submit
           </button>
         </form>
