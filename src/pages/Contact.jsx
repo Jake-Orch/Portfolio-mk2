@@ -31,12 +31,6 @@ const Contact = () => {
     } 
   };
 
-  // This function redirects users to the about page once they send me an email
-
-  const navigate = useNavigate();
-  const handleSubmit = (e) => {
-    navigate('/Portfolio-mk2/')
-  }
 
   return (
     <div className="pb-3">

@@ -11,6 +11,7 @@ const About = () => {
         </section>
         <section className="flex justify-around items-center flex-col sm:flex-row px-5 sm:px-10">
           <section>
+            {/* Here, we are getting the portfolio picture "profile"  from assets/imagesme.jpg and displaying it in the about page*/}
             <img src={Profile} alt="portrait" className="mb-5 sm:mb-0 sm:mr-10"></img>
           </section>
           <section className="w-5/6">
