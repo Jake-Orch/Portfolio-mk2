@@ -1,9 +1,13 @@
 import React from "react";
 
 const Project = ({ name, img, alt, deployed, git }) => {
+
+  // handleGit forwards the viewer to my the GitHub repository of the given project being displayed
   const handleGit = () => {
     window.open(git);
   };
+
+  // handleDeployed forwards the viewer to my the deployed page of the given project being displayed
   const handleDeployed = () => {
     window.open(deployed);
   };

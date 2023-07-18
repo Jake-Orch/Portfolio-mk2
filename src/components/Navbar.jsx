@@ -10,6 +10,7 @@ const Navbar = () => {
           Jake Orchard
         </a>
         <ul>
+          {/* Here I have defined all of my page tabs, using the CustomLink function to add more style to them*/}
           <CustomLink to="/Portfolio-mk2/">About</CustomLink>
           <CustomLink to="/Portfolio-mk2/portfolio">Portfolio</CustomLink>
           <CustomLink to="/Portfolio-mk2/contact">Contact</CustomLink>

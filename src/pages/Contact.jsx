@@ -2,14 +2,18 @@ import React, { useState } from "react";
 
 const Contact = () => {
 
+  // This useState is used to get the value of the email section of the form
   const [email, setEmail] = useState('');
+  // This useState sets the value of the error if the email is invalid
   const [emailError, setEmailError] = useState('');
 
+  // Here i am defining the email validation function
   function validEmail(email) {
     return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 
   }
 
+  // This function Checks if the email the user is inputting is a valid email
   const handleEmail = (e) => {
     if (!validEmail(e.target.value)) {
       setEmailError('Email is invalid');
@@ -19,6 +23,7 @@ const Contact = () => {
     setEmail(e.target.value)
   }
 
+  // This function tells the user that a field is required when they haven't entered any text and have moved away from the element
   const handleBlank = (e) => {
     if (e.target.value === "") {
       alert(`${e.target.name} Required`);
