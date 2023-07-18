@@ -23,5 +23,5 @@ I tested all functionality on the application
 ## Questions  
 If you have any questions about this application, contact me via either my email address or my GitHub account.  
 My email address: jakeorchard@live.co.uk  
-My GitHub URL: https://github.com/Jake-Orch
+My GitHub URL: https://github.com/Jake-Orch  
 Deployed page URL: https://jake-orch.github.io/Portfolio-mk2/
