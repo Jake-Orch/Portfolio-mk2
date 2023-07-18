@@ -73,7 +73,7 @@ const Contact = () => {
             onBlur={handleBlank}
           ></textarea>
           {emailError && <h2 className="" style={{color: 'red'}}>{emailError}</h2>}
-          <button className="px-2 py-1 m-2 bg-slate-300 custom-color self-end border-2 border-black rounded-lg" onClick={handleSubmit}>
+          <button className="px-2 py-1 m-2 bg-slate-300 custom-color self-end border-2 border-black rounded-lg">
             Submit
           </button>
         </form>
